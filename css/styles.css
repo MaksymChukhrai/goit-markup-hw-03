@@ -8,6 +8,7 @@
   --our-team-white: #f5f4fa;
   --primary-grey-color: #757575;
   --solid-white-color: #eeeeee;
+  --border-white-color:#ECECEC;
 }
 body {
   font-family: Roboto, sans-serif, Raleway;
@@ -28,24 +29,46 @@ p {
 .header {
   background: var(--primary-white-color);
   width: 1600px;
-  margin-right: 0px;
+  margin-right: 0;
+  border-bottom: 1px solid var(--border-white-color);
 }
 .section {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0px;
   width: 1600px;
   margin-right: 0px;
 }
+  .section-job{
+    padding-bottom: 0px;
+    padding-top: 94px;
+    padding-bottom: 0px;
+    width: 1600px;
+    margin-right: 0px;
+  }
+
+.hero {
+  background: var(--hero-black-color);
+  text-align: center;
+  height: 600px;
+  padding-bottom: 94px;
+  /* margin-bottom: 94px; */ 
+}
+
+.section-team {
+  background: var(--our-team-white);
+  padding-bottom: 94px;
+}
 .container,
-.container-header {
+.container-header{
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding-right: 15px;
   padding-left: 15px;
-  display: flex;
-  align-items: center;
+  padding-right: 15px;
 }
+.container-header {
+    display: flex;
+ }
 
 .links:hover,
 .links:focus {
@@ -69,6 +92,8 @@ p {
 .contacts-nav {
   list-style: none;
   padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: auto;
   gap: 50px;
   display: flex;
@@ -86,30 +111,19 @@ p {
   padding-bottom: 32px;
 }
 
-.hero {
-  background: var(--hero-black-color);
-  /* position: absolute; */
-  width: 1600px;
-  height: 600px;
-  padding-bottom: 94px;
-  margin-bottom: 94px;
-
-  text-align: center;
-}
 .slogan {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--primary-white-color);
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
+  max-width: 696px;
+  margin-bottom: 30px;  
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 150px ;
 }
 .slogan-button:hover,
 .slogan-button:focus {
@@ -120,8 +134,8 @@ p {
 
 .slogan-button {
   cursor: pointer;
-
   background-color: var(--accent-color);
+  color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: inherit;
@@ -129,16 +143,14 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
   text-align: center;
   letter-spacing: 0.06em;
-  position: absolute;
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;
-  color: var(--primary-white-color);
-  /* все потрібно */
+padding:10px 32px;
+   /* все потрібно */
+}
+.team-desk{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .gallery-desk {
   padding-top: 20px;
@@ -151,18 +163,22 @@ p {
 }
 
 .job-img {
+  /* display: block; */
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 30px;
   padding-left: 0px;
-
   width: 1170px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .job-1,
 .job-2,
 .job-3 {
   max-width: 100%;
+
+  /* display: block; */
 }
 .qualities,
 .job-img,
@@ -174,6 +190,8 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .qualities {
   display: flex;
@@ -201,9 +219,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-grey-color);
 }
-.section-team {
-  background: var(--our-team-white);
-}
+
 .team {
   display: block;
 }
@@ -215,7 +231,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   /* width: 366px; */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--primary-text-color);
 }
@@ -243,6 +259,7 @@ p {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 
   color: var(--primary-text-color);
 }
@@ -256,7 +273,10 @@ p {
 }
 .footer {
   background: var(--hero-black-color);
-  width: 1600px;
+max-width:1600px;
+padding-top: 60px;
+padding-bottom:60px;
+
 }
 .web {
   color: var(--accent-color);
@@ -275,7 +295,12 @@ p {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+  /* justify-content: center; */
 }
 .mail-contacts {
   position: absolute;
@@ -313,8 +338,8 @@ p {
 .tel,
 .email {
   font-style: normal;
-
-  line-height: 1.71;
+  margin-top:9px;
+  line-height:1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
@@ -399,15 +424,11 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-grey-color);
 }
-.bottom {
-  display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
+
 .nav-footer {
   padding-left: 0px;
-  padding-bottom: 60px;
-  padding-top: 20px;
+  
+margin-top:20px;
 }
 .footer-logo {
   text-decoration: none;
