@@ -1,2 +1,2 @@
 # Web-Studio
-https://github.com/MaksymChukhrai/goit-markup-hw-03
+https://maksymchukhrai.github.io/goit-markup-hw-03/index.html
