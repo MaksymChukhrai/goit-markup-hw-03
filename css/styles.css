@@ -17,6 +17,7 @@ body {
   letter-spacing: 0.3em;
   font-size: 14px;
 }
+
 h1,
 h2,
 h3,
@@ -34,16 +35,16 @@ p {
   border-bottom: 1px solid var(--border-white-color);
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 0px;
-  width: 1600px;
+  /* padding-top: 94px;
+  padding-bottom: 0px; */
+  /* width: 1600px; */
   margin-right: 0px;
 }
 .section-job {
   padding-bottom: 0px;
   padding-top: 94px;
   padding-bottom: 0px;
-  width: 1600px;
+  /* width: 1600px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -51,9 +52,9 @@ p {
 .hero {
   background: var(--hero-black-color);
   text-align: center;
-  height: 600px;
-  padding-bottom: 94px;
-  /* margin-bottom: 94px; */
+  max-width: 1600px;
+  padding-bottom: 200px;
+  padding-top: 200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -65,6 +66,7 @@ p {
 .section-team {
   background: var(--our-team-white);
   padding-bottom: 94px;
+  padding-top: 94px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -99,20 +101,24 @@ p {
 .link-current {
   color: var(--accent-color);
 }
+
+.navi {
+  /* margin-right: 344px; */
+  margin-left: 93px;
+}
+
 .list-nav,
 .contacts-nav {
   list-style: none;
   padding: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: auto;
 
   gap: 50px;
   display: flex;
 }
-.list-nav {
-  margin-left: 93px;
-  margin-right: 344px;
-}
+
 .links,
 .contacts,
 .link-current {
@@ -137,7 +143,6 @@ p {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 150px;
 }
 .slogan-button:hover,
 .slogan-button:focus {
@@ -161,6 +166,7 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
+
   /* все потрібно */
 }
 .team-desk {
@@ -183,11 +189,12 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.job-1,
-.job-2,
-.job-3 {
+
+.image {
   max-width: 100%;
+  display: block;
 }
+
 .qualities,
 .job-img,
 .our-team {
@@ -205,8 +212,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
+  margin: 0px;
   gap: 30px;
 }
 .reasons-item {
@@ -321,16 +328,6 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.tel-contacts {
-  position: absolute;
-  width: 122px;
-  height: 16px;
-  left: 1263px;
-
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .tel:hover,
 .tel:focus {
@@ -369,12 +366,15 @@ p {
   height: 1px;
   margin: -1px;
 }
-
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container-portfolio {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 94px;
 
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -391,7 +391,7 @@ p {
   justify-content: center;
 
   margin-bottom: 0px;
-  margin-top: 94px;
+  margin-top: 0px;
 }
 .nav-projects {
   display: flex;
@@ -399,17 +399,19 @@ p {
   gap: 30px;
   padding: 0px;
   justify-content: center;
-  margin-top: 88px;
-  max-width: 1170px;
+  /* flex-basis: calc(100%/3); */
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   margin-left: auto;
   margin-right: auto;
 }
-.nav-projects li {
+.nav-projects .li {
   background-color: var(--primary-white-color);
 }
 
-.nav-button :hover,
-.nav-button :focus {
+.nav-buttons :hover,
+.nav-buttons :focus {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -455,11 +457,12 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-grey-color);
 }
-
-.nav-footer {
-  padding-left: 0px;
-
+.address {
   margin-top: 20px;
+}
+.nav-footer {
+  padding: 0px;
+  margin: 0px;
 }
 .footer-logo {
   text-decoration: none;
