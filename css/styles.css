@@ -27,6 +27,14 @@ h6,
 p {
   margin: 0;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
 .header {
   background: var(--primary-white-color);
   /* width: 1600px; */
@@ -34,16 +42,11 @@ p {
   margin-left: auto;
   border-bottom: 1px solid var(--border-white-color);
 }
-.section {
-  /* padding-top: 94px;
-  padding-bottom: 0px; */
-  /* width: 1600px; */
-  margin-right: 0px;
-}
+
 .section-job {
-  padding-bottom: 0px;
+  padding-bottom: 47px;
   padding-top: 94px;
-  padding-bottom: 0px;
+
   /* width: 1600px; */
   margin-right: auto;
   margin-left: auto;
@@ -66,7 +69,7 @@ p {
 .section-team {
   background: var(--our-team-white);
   padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 47px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -103,16 +106,16 @@ p {
 }
 
 .navi {
-  /* margin-right: 344px; */
+  margin-right: auto;
   margin-left: 93px;
 }
 
 .list-nav,
 .contacts-nav {
   list-style: none;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* padding: 0px;
+  margin-top: 0px; */
+  /* margin-bottom: 0px; */
   margin-left: auto;
 
   gap: 50px;
@@ -179,20 +182,12 @@ p {
 }
 
 .job-img {
-  /* display: block; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
   padding-left: 0px;
-  width: 1170px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.image {
-  max-width: 100%;
-  display: block;
+  width: 1200px;
 }
 
 .qualities,
@@ -204,16 +199,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .qualities {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
   gap: 30px;
 }
 .reasons-item {
@@ -239,7 +229,8 @@ p {
   display: block;
 }
 
-.directions {
+.directions,
+.directions-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -250,14 +241,7 @@ p {
 
   color: var(--primary-text-color);
 }
-.directions-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 50px;
-}
+
 .olga,
 .igor,
 .mykola,
@@ -304,20 +288,6 @@ p {
   color: var(--primary-white-color);
 }
 
-.logo {
-  text-decoration: none;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-
-  /* margin-right: 93px; */
-  padding-top: 24px;
-  padding-bottom: 25px;
-  align-items: center;
-  /* justify-content: center; */
-}
 .mail-contacts {
   position: absolute;
   width: 135px;
@@ -337,10 +307,12 @@ p {
 .email:focus {
   color: var(--accent-color);
 }
-.address:hover,
-.address:focus {
+
+.address-map:hover,
+.address-map:focus {
   color: var(--accent-color);
 }
+
 .tel,
 .email {
   font-style: normal;
@@ -355,7 +327,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-
+  /* margin-top: 20px; */
   color: var(--primary-white-color);
 }
 /* окремі свойства portfolio */
@@ -374,7 +346,7 @@ p {
   margin-right: auto;
   margin-left: auto;
 
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -389,25 +361,20 @@ p {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-
-  margin-bottom: 0px;
+  margin-bottom: 34px;
   margin-top: 0px;
 }
 .nav-projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0px;
-  justify-content: center;
-  /* flex-basis: calc(100%/3); */
-  margin-top: 0px;
-  margin-bottom: 0px;
-
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
 }
-.nav-projects .li {
+.nav-projects li {
   background-color: var(--primary-white-color);
+  flex-basis: calc((100%-2) * 30px / 3);
 }
 
 .nav-buttons :hover,
@@ -442,6 +409,7 @@ p {
   border-right: 1px solid var(--solid-white-color);
   border-top: none;
 }
+
 .project {
   font-weight: 700;
   font-size: 18px;
@@ -457,13 +425,21 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-grey-color);
 }
-.address {
-  margin-top: 20px;
+.address-map {
+  color: var(--primary-white-color);
+  text-decoration: none;
 }
 .nav-footer {
   padding: 0px;
   margin: 0px;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-top: 20px;
+  color: var(--primary-white-color);
 }
+.logo,
 .footer-logo {
   text-decoration: none;
   font-family: "Raleway";
@@ -471,4 +447,8 @@ p {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
