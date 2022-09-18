@@ -44,10 +44,9 @@ img {
 }
 
 .section-job {
-  padding-bottom: 47px;
+  padding-bottom: 94px;
   padding-top: 94px;
 
-  /* width: 1600px; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -69,7 +68,7 @@ img {
 .section-team {
   background: var(--our-team-white);
   padding-bottom: 94px;
-  padding-top: 47px;
+  padding-top: 94px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -106,7 +105,7 @@ img {
 }
 
 .navi {
-  margin-right: auto;
+  /* margin-right: auto; */
   margin-left: 93px;
 }
 
@@ -187,7 +186,7 @@ img {
   justify-content: space-between;
   gap: 30px;
   padding-left: 0px;
-  width: 1200px;
+
 }
 
 .qualities,
@@ -272,10 +271,10 @@ img {
 }
 .footer {
   background: var(--hero-black-color);
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-right: auto;
+  margin-right: auto; 
   margin-left: auto;
 }
 .web {
@@ -361,7 +360,7 @@ img {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   margin-top: 0px;
 }
 .nav-projects {
@@ -374,7 +373,7 @@ img {
 }
 .nav-projects li {
   background-color: var(--primary-white-color);
-  flex-basis: calc((100%-2) * 30px / 3);
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .nav-buttons :hover,
@@ -436,7 +435,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-top: 20px;
+  
   color: var(--primary-white-color);
 }
 .logo,
@@ -451,4 +450,7 @@ img {
 .logo {
   margin-top: 24px;
   margin-bottom: 25px;
+}
+.ad-footer{
+  margin-top: 20px;
 }
